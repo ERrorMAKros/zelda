@@ -78,11 +78,11 @@ function teclado(datos) {
             zelda.y = 0;
             dibujar();
         }
-        if (zelda.y <= 200 && (zelda.x === 0 || zelda.x === 50 || zelda.x === 100 || zelda.x === 200)) {
+        if (zelda.y === 200 && (zelda.x === 0 || zelda.x === 50 || zelda.x === 100 || zelda.x === 200)) {
             zelda.y = 250;
             dibujar();
         }
-        if (zelda.y >= 350 && (zelda.x === 150 || zelda.x === 200 || zelda.x === 250 || zelda.x === 300 || zelda.x === 350 || zelda.x === 400 || zelda.x === 450)) {
+        if (zelda.y === 350 && (zelda.x === 150 || zelda.x === 200 || zelda.x === 250 || zelda.x === 300 || zelda.x === 350 || zelda.x === 400 || zelda.x === 450)) {
             zelda.y = 400;
             dibujar();
         }
