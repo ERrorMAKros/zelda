@@ -6,3 +6,23 @@ body {
 body p {
   color: #fff;
 }
+
+#win {
+  position: absolute;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 auto;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 5vh;
+  border-radius: 1em;
+}
+
+#win p {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 5em;
+  color: #fff;
+  margin: 0;
+}

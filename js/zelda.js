@@ -28,6 +28,14 @@ var teclas = {
     LEFT: 37,
     RIGHT: 39
 }
+var wtxt = document.createElement("div");
+wtxt.setAttribute("id", "win");
+wtxt.innerHTML = "<p>Ganaste</p>";
+var mybtn = document.createElement("input");
+mybtn.setAttribute("id", "reset");
+mybtn.setAttribute("value", "Reinicia");
+mybtn.setAttribute("type", "submit");
+mybtn.setAttribute("onClick", "window.location.href=window.location.href");
 
 // Objeto Jason
 function inicio() {
@@ -62,7 +70,6 @@ function inicio() {
 }
 
 function teclado(datos) {
-
     if (datos.keyCode == 38) {
 
         var codigo = datos.keyCode;
@@ -133,6 +140,7 @@ function teclado(datos) {
             zelda.x = 250;
             dibujar();
         }
+
     }
     if (datos.keyCode == 39) {
         var codigo = datos.keyCode;
@@ -156,11 +164,24 @@ function teclado(datos) {
             zelda.x = 100;
             dibujar();
         }
+        //     if (zelda.y === 200 && zelda.x === 400) {
+        //       zelda.y = 200;
+        //       zelda.x = 400;
+        //       dibujar();
+        //     }
     }
     console.log("y" + zelda.y + " " + "x" + zelda.x);
+    if (zelda.y === 200 && zelda.x === 400) {
+        document.body.appendChild(wtxt);
+        document.getElementById('win').appendChild(mybtn);
+        zelda.x === 400;
+        zelda.y === 200;
+        dibujar();
+
+
+    }
+
 }
-
-
 
 function confirmarEnemy() {
     enemy.lizOK = true;
