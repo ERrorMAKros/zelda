@@ -6,8 +6,6 @@ body {
 body p {
   color: #fff;
 }
-<<<<<<< HEAD
-=======
 
 #win {
   position: absolute;
@@ -25,7 +23,6 @@ body p {
   text-align: center;
   font-family: sans-serif;
   font-size: 5em;
-  color: #fff;
+  color:#fff;
   margin: 0;
 }
->>>>>>> refs/remotes/origin/master
