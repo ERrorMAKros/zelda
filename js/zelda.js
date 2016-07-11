@@ -28,6 +28,17 @@ var teclas = {
     LEFT: 37,
     RIGHT: 39
 }
+<<<<<<< HEAD
+=======
+var wtxt = document.createElement("div");
+wtxt.setAttribute("id", "win");
+wtxt.innerHTML = "<p>Ganaste</p>";
+var mybtn = document.createElement("input");
+mybtn.setAttribute("id", "reset");
+mybtn.setAttribute("value", "Reinicia");
+mybtn.setAttribute("type", "submit");
+mybtn.setAttribute("onClick", "window.location.href=window.location.href");
+>>>>>>> refs/remotes/origin/master
 
 // Objeto Jason
 function inicio() {
@@ -133,6 +144,10 @@ function teclado(datos) {
             zelda.x = 250;
             dibujar();
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/remotes/origin/master
     }
     if (datos.keyCode == 39) {
         var codigo = datos.keyCode;
@@ -143,6 +158,21 @@ function teclado(datos) {
             zelda.izqOK = false;
             zelda.x += 50;
             dibujar();
+<<<<<<< HEAD
+        }
+        if (zelda.x > 450) {
+            zelda.x = 450;
+            dibujar();
+        }
+        if (zelda.x === 200 && zelda.y <= 200) {
+            zelda.x = 150;
+            dibujar();
+        }
+        if (zelda.x === 150 && zelda.y === 350) {
+            zelda.x = 100;
+            dibujar();
+=======
+>>>>>>> refs/remotes/origin/master
         }
         if (zelda.x > 450) {
             zelda.x = 450;
@@ -156,10 +186,27 @@ function teclado(datos) {
             zelda.x = 100;
             dibujar();
         }
+        //     if (zelda.y === 200 && zelda.x === 400) {
+        //       zelda.y = 200;
+        //       zelda.x = 400;
+        //       dibujar();
+        //     }
     }
     console.log("y" + zelda.y + " " + "x" + zelda.x);
+<<<<<<< HEAD
 }
 
+=======
+    if (zelda.y === 200 && zelda.x === 400) {
+        document.body.appendChild(wtxt);
+        document.getElementById('win').appendChild(mybtn);
+        zelda.x === 400;
+        zelda.y === 200;
+        dibujar();
+
+
+    }
+>>>>>>> refs/remotes/origin/master
 
 
 function confirmarEnemy() {
